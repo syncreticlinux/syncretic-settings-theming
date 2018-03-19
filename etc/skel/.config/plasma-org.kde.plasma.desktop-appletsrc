@@ -6,19 +6,6 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-activityId=636c9ebe-767e-431b-8f03-09f6be7d36c9
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -35,8 +22,22 @@ favoritesPortedToKAstats=true
 immutability=1
 plugin=org.kde.plasma.kicker
 
+[Containments][2][Applets][19][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][2][Applets][19][Configuration][General]
+customButtonImage=/usr/share/icons/hicolor/scalable/apps/homerun.svg
 favoritesPortedToKAstats=true
+useCustomButtonImage=true
+
+[Containments][2][Applets][22]
+immutability=1
+plugin=org.kde.plasma.icon
+
+[Containments][2][Applets][22][Configuration]
+localPath=/home/syncretic/.local/share/plasma_icons/org.kde.yakuake.desktop
+url=file:///usr/share/default-settings/plasma5-profile/applications/org.kde.yakuake.desktop
 
 [Containments][2][Applets][3][Configuration][General]
 favoritesPortedToKAstats=true
@@ -67,10 +68,26 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][2][ConfigDialog]
 DialogHeight=84
-DialogWidth=1208
+DialogWidth=1280
 
 [Containments][2][General]
-AppletOrder=19;5;6;8
+AppletOrder=19;5;22;6;8
+
+[Containments][20]
+activityId=064d0bd3-5a28-40a3-a57f-068b48e76c20
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][20][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][20][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/syncretic/1804_1.jpeg
 
 [Containments][7]
 activityId=
@@ -119,6 +136,7 @@ DialogWidth=720
 
 [Containments][7][General]
 extraItems=org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volumewin7mixer
+hiddenItems=org.kde.plasma.clipboard
 knownItems=org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.volumewin7mixer
 
 [ScreenMapping]
